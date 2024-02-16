@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Registration Form</legend>
+            <form method="get" action="action.html" enctype="multipart/form-data">
+                <!-- we use action="https://httpbin.org/get for show entered data" -->
+               <label for="fname">First Name:</label>
+               <input type="text" name="fname" id="fname" placeholder="Enter First Name" autofocus required>
+               <br><br>
+               <label for="lname">Last Name:</label>
+               <input type="text" name="lname" id="lname" placeholder="Enter Last Name" required>
+               <br><br>
+               <label for="psw">Password:</label>
+               <input type="password" name="psw" id="psw" placeholder="Enter Password" required>
+               <br><br>
+               <label>Gender:</label>
+               <input type="radio" name="gender" id="male">
+               <label for="male">Male</label>
+               <input type="radio" name="gender" id="female">
+               <label for="female">Female</label>
+               <br><br>
+               <label for="bdate">Birth Date:</label>
+               <input type="date" name="bdate" id="bdate">
+               <br><br>
+               <label for="address">Address:</label>
+               <br>
+               <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter Address"></textarea>
+               <br><br>
+               <label for="file">Uplod Photo:</label>
+               <input type="file" name="file" id="file">
+               <br><br>
+
+               <center>
+                <button>Submit</button>
+                <button>Reset</button>
+               </center>
+            </form>
+    </fieldset>
+</body>
+</html>

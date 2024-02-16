@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+</head>
+<body>
+    <fieldset>
+        <legend>User Details</legend>
+        <form method="get" action="action.html" enctype="multipart/form-data">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" placeholder="Enter First name" required>
+            <br><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" placeholder="Enter Last name" requuired>
+            <br><br>
+            <label for="address">Address:</label>
+            <br>
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter Address" required></textarea>
+            <br><br>
+            <label>Select Book:</label>
+            <input type="radio" id="iot" name="book" value="iot" required>
+            <label for="iot">IOT</label>
+            <input type="radio" id="ajava" name="book" value="ajava">
+            <label for="ajava">AJAVA</label>
+            <input type="radio" id="wp" name="book" value="wp">
+            <label for="wp">WP</label>
+            <input type="radio" id="oop" name="book" value="oop">
+            <label for="oop">OOP</label>
+            <br><br>
+             <label for="author">Select Author:</label>
+             <select name="author" id="author" required>
+                <optgroup label="IOT author">
+                   <option value="">&lt--select--&gt</option>
+                   <option value="harsh">Harsh</option>
+                   <option value="rahul">Rahul</option>
+                </optgroup>
+                 <optgroup label="AJAVA author">
+                   <option value="keval">keval</option>
+                   <option value="mayur">Mayur</option>
+                </optgroup>
+                 <optgroup label="WP author">
+                   <option value="vaibhav">Vaibhav</option>
+                   <option value="kevin">Kevin</option>
+                </optgroup>
+                 <optgroup label="OOP author">
+                   <option value="devang">Devang</option>
+                   <option value="krutik">Krutik</option>
+                   <option value="other">Other</option>
+                </optgroup>
+             </select>
+             <br><br>  
+             <label for="comment">Comments:</label>
+             <br>
+             <textarea name="comment" id="comment" cols="30" rows="10" placeholder="comment your reviews"></textarea> 
+             <br><br>
+            <center>
+                <input type="submit">
+                <input type="reset">
+           </center>
+        </form>
+    </fieldset>
+</body>
+</html>
