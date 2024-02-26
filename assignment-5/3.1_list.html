@@ -1,0 +1,107 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIST CSS</title>
+    <style>
+        ul{
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        li{
+            color: red;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            list-style-type: square;
+            list-style-position: inside;
+            /* list-style-position: outside; */
+            /* list-style-image: url(); */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Hello World</li>
+            <li>Hello World</li>
+            <li>Hello World</li>
+            <li>Hello World</li>
+        </ul>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS List and Positioning Demo</title>
+<style>
+    /* Styling for unordered list */
+    ul {
+        list-style-type: square;
+        /* list-style-image: url(); */
+    }
+
+    /* Styling for ordered list */
+    ol {
+        list-style-type: upper-roman;
+    }
+
+    /* Styling for list items */
+    li {
+        margin-bottom: 5px;
+    }
+
+    /* Styling for positioned elements */
+    .container {
+        position: relative;
+    }
+
+    .absolute {
+        position: absolute;
+        top: 500px;
+        left: 50px;
+        background-color: lightblue;
+        padding: 10px;
+    }
+
+    .fixed {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: lightgreen;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+    <h2>Unordered Lists</h2>
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ul>
+
+    <h2>Ordered List</h2>
+    <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
+
+    <h2>Positioned Elements</h2>
+    <div class="container">
+        <div class="absolute">
+            Positioned absolutely (relative to parent)
+        </div>
+    </div>
+
+    <div class="fixed">
+        Positioned fixed (relative to viewport)
+    </div>
+</body>
+</html>
