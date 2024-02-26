@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Pseudo-class & Pseudo-element Demo</title>
+    <style>
+      /* Styling for links */
+      a {
+        color: blue;
+        text-decoration: none;
+      }
+
+      /* Styling for links when hovered */
+      a:hover {
+        text-decoration: underline;
+        color: red;
+      }
+
+      /* Styling for the first paragraph */
+      p:first-of-type {
+        font-weight: bold;
+      }
+
+      /* Styling for the last paragraph */
+      p:last-of-type {
+        font-style: italic;
+      }
+
+      /* Styling for the first letter of paragraphs */
+      p::first-letter {
+        font-size: 150%;
+        color: blue;
+      }
+
+      /* Styling for the first line of paragraphs */
+      p::first-line {
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      This is the first paragraph. It will be styled with Lorem ipsum dolor sit
+      amet, consectetur adipisicing elit. Ipsum esse dignissimos distinctio unde
+      adipisci sunt ab sequi accusantium et laudantium.
+      <span>font-weight: bold;</span>.
+    </p>
+    <p>
+      This is the second paragraph. Only the first letter will be styled with
+      <span>font-size: 150%; color: red;</span>.
+    </p>
+    <p>
+      This is the third paragraph. Only the first line will be styled with
+      <span>text-transform: uppercase;</span>.
+    </p>
+    <p>
+      This is the last paragraph. It will be styled with
+      <span>font-style: italic;</span>.
+    </p>
+    <p>
+      <a href="#"
+        >This is a link. Hover over it to see the underline effect and red
+        font.</a
+      >
+    </p>
+  </body>
+</html>
