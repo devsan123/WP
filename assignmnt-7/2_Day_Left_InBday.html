@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var birthDate = new Date("2003-02-25");
+      var daysLeft = daysUntilBirthday(birthDate);
+      document.write("Days left of your next birthday is :", daysLeft);
+
+      function daysUntilBirthday(birthDate) {
+        var today = new Date();
+        var nextBirthday = new Date(
+          today.getFullYear(),
+          birthDate.getMonth(),
+          birthDate.getDate()
+        );
+        if (nextBirthday < today) {
+          nextBirthday.setFullYear(nextBirthday.getFullYear() + 1);
+        }
+        var oneDay = 1000 * 60 * 60 * 24;
+        return Math.ceil((nextBirthday - today) / oneDay);
+      }
+    </script>
+  </body>
+</html>

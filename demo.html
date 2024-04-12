@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elements Example</title>
+    
+    <style>
+        .box {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background:red;
+    margin: 200px;
+}
+
+.box::before {
+    content: "Before"; /* Content to be added before the element */
+    position: absolute; /* Position relative to the parent */
+    top: 0; /* Position from the top */
+    left: -50px; 
+    background-color: lightblue;
+    padding: 5px;
+}
+
+.box::after {
+    content: "After"; /* Content to be added after the element */
+    position: absolute; /* Position relative to the parent */
+    bottom: 0; /* Position from the bottom */
+    right: -50px; /* Position from the right */
+    background-color: lightgreen;
+    padding: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="box">Hello, world!</div>
+</body>
+</html>

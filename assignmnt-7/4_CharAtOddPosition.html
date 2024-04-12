@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character at odd position</title>
+  </head>
+  <body>
+    <script>
+      // method 1
+      var string = prompt("Enter String:");
+      for (i = 0; i < string.length; i++) {
+        if (i % 2 == 0) {
+          document.write(string[i]);
+        }
+      }
+
+      // method 2
+      // var string = prompt("Enter String:");
+      // for(i=0; i<string.length; i=i+2)
+      // {
+      //     document.write(string[i]);
+      // }
+    </script>
+  </body>
+</html>

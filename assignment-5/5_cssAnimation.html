@@ -11,7 +11,7 @@
         margin: 2px;
         background-color: red;
         position: relative;
-        animation: moveRight 4s infinite alternate;
+        animation: moveRight 4s ease-in-out infinite alternate;
     }
 
     @keyframes moveRight {
@@ -19,7 +19,8 @@
             left: 0;
         }
         100% {
-            left: calc(100% - 100px);
+            /* left: calc(100% - 100px); */
+            left:100%;
         }
     }
 </style>

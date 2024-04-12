@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Web Layout</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      * {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color:lightblue;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        /* text-align: center; */
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+      }
+      .social-icon img {
+        border-radius: 50%;
+        width: auto;
+        height: 25px;
+        margin: 0 10px;
+      
+      }
+      img{
+        /* aspect-ratio: 3/2; */
+          /* width: 15%; */
+          /* object-fit: contain; */
+          /* mix-blend-mode: darken; */
+      }
+      #logo img {
+        width: auto;
+        height: 50px;
+        border-radius: 10px;
+      }
+      nav {
+        background-color: #bcb6b6;
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav ul {
+        list-style-type: none;
+      }
+
+      nav ul li {
+        display: inline;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 10px;
+      }
+
+      .main-container {
+        height: 15rem;
+        width: 98.5%;
+        margin: 10px;
+        background-image: url(/assignment-6/images/bg.jpeg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .text-cta {
+        height: 5rem;
+        width: 98.5%;
+        margin: 10px;
+        padding: 20px;
+        background-color:#c7c2c2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    .text-cta h1{
+      width: 50%;
+      height: auto;
+      background-color:#e0dddd;
+    }
+      .services {
+        display: inline;
+        text-align: center;
+      }
+      .services h1 {
+        margin: 10px;
+      }
+      .services img {
+        width: 225px;
+        height: 225px;
+        border-radius: 50%;
+        margin: 0 2.5rem;
+      }
+
+      .gallery {
+        display: inline;
+        text-align: center;
+      }
+      .gallery h1 {
+        margin: 20px;
+      }
+      .gallery-img img{
+        width: 225px;
+        height: 250px;
+      }
+      .gallery-img-1 {
+        position: relative;
+        left: 60px;
+      }
+      .gallery-img-2 {
+        position: relative;
+        /* z-index: -1; */
+      }
+      .gallery-img-3 {
+        position: relative;
+        right: 60px;
+      }
+      .above-footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        margin: 10px 0;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        margin-top: 10px;
+        text-align: right;
+        position: sticky;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h5>Contact Us : +91 9999999999</h5>
+      <div class="social-icon">
+        <img src="/assignment-6/images/faceboook.png" alt="facebook" title="facebook"/>
+        <img src="/assignment-6/images/Instagram.jpeg" alt="Instagram" title="Instagram"/>
+        <img src="/assignment-6/images/linkedin.jpeg" alt="linkedin" title="linkedin"/>
+        <img src="/assignment-6/images/telegram.jpeg" alt="telegram" title="telegram"/>
+      </div>
+    </header>
+    <nav>
+      <div id="logo">
+        <img src="/assignment-6/images/linkedin.jpeg" alt="logo" title="logo"/>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <section>
+      <div class="main-container">
+        <div class="sub-container">
+          <h1>Heading</h1>
+          <h2>Sub Heading</h2>
+          <button>C T A</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="text-cta">
+        <h1>Text-Text-Text</h1>
+        <button>C T A</button>
+      </div>
+    </section>
+    <section>
+      <div class="services" id="services">
+        <h1>Services</h1>
+        <div>
+          <img src="/assignment-6/images/faceboook.png" alt="faceboook" title="faceboook"/>
+          <img src="/assignment-6/images/Instagram.jpeg" alt="Instagram" title="Instagram"/>
+          <img src="/assignment-6/images/linkedin.jpeg" alt="linkedin" title="linkedin"/>
+          <img src="/assignment-6/images/telegram.jpeg" alt="telegram" title="telegram"/>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="gallery">
+        <h1>Gallery</h1>
+        <div class="gallery-img">
+          <img
+            class="gallery-img-1"
+            src="/assignment-6/images/faceboook.png"
+            alt="faceboook"
+          />
+          <img
+            class="gallery-img-2"
+            src="/assignment-6/images/Instagram.jpeg"
+            alt="Instagram"
+          />
+          <img
+            class="gallery-img-3"
+            src="/assignment-6/images/linkedin.jpeg"
+            alt="linkedin"
+          />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="above-footer">
+        <div>
+          <h3>Footer Menu-1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            perferendis ullam nobis sed tempore nesciunt magni totam
+            voluptatibus omnis ea, earum vero quibusdam possimus fugiat. Quod
+            quae minima cum veniam?
+          </p>
+        </div>
+        <div>
+          <h3>Footer Menu-2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            perferendis ullam nobis sed tempore nesciunt magni totam
+            voluptatibus omnis ea, earum vero quibusdam possimus fugiat. Quod
+            quae minima cum veniam?
+          </p>
+        </div>
+        <div>
+          <h3>Footer Menu-3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            perferendis ullam nobis sed tempore nesciunt magni totam
+            voluptatibus omnis ea, earum vero quibusdam possimus fugiat. Quod
+            quae minima cum veniam?
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2024 Simple Web Layout</p>
+    </footer>
+  </body>
+</html>

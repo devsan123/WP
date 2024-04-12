@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search word</title>
+  </head>
+  <body>
+    <script>
+      var string = ["hello", "devsan", "good"];
+     var flag = false;
+      var word = prompt("Enter word:");
+      for (var i = 0; i < string.length; i++) {
+        if (string[i] == word) {
+          flag = true;
+          document.writeln("Word found at index:", i);
+          break;
+        }
+      }
+      if (flag == false) {
+        document.write("word not found in the string");
+      }
+    </script>
+  </body>
+</html>

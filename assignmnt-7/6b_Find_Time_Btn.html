@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Time Button</title>
+  </head>
+  <body>
+    <h2>Click on bellow button to display current date and time:</h2>
+    <button onclick="showTD()">Find Time</button>
+    <div id="Output"></div>
+    <script>
+      function showTD() {
+        var curr_Date = new Date();          
+        document.getElementById("Output").innerHTML = "Current Date and Time is : " + curr_Date.toLocaleString();
+      }
+    </script>
+  </body>
+</html>

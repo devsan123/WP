@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>two Digit Number</title>
+  </head>
+  <body>
+    <script>
+      // Method 1
+      var n = prompt("Enter two digit number:");
+      var n1 = parseInt(n.charAt(0));
+      var n2 = parseInt(n.charAt(1));
+      document.writeln(n1 + "," + n2 + " : ");
+      for (i = 1; i < n2; i++) {
+        n1 = n1 * n1;
+      }
+      document.write(n3);
+
+      // Method 2
+    //   var n = prompt("Enter two digit number:");
+    //   var n1 = parseInt(n.charAt(0));
+    //   var n2 = parseInt(n.charAt(1));
+    //   document.writeln(n1 + "," + n2 + " : ");
+    //   document.write(Math.pow(n1, n2));
+    </script>
+  </body>
+</html>
